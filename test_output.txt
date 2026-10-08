@@ -1,0 +1,177 @@
+
+   FAIL  Tests\Feature\PublicPagesTest
+  Γ¿» listing detail loads                                                   2.39s  
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   FAILED  Tests\Feature\PublicPagesTest > listing detail loads                   
+  Expected response status code [200] but received 500.
+Failed asserting that 500 is identical to 200.
+
+The following exception occurred during the last request:
+
+ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\Antigravity_New_Apps\toletkoi_laravel\storage\framework\views\97fb71843129d13ad98aee5b60b56338.php:352
+Stack trace:
+#0 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Antigravity_...', Array)
+#2 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\livewire\livewire\src\Mechanisms\ExtendBlade\ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Antigravity_...', Array)
+#3 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath('C:\\Antigravity_...', Array)
+#4 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\livewire\livewire\src\Mechanisms\ExtendBlade\ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get('C:\\Antigravity_...', Array)
+#5 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get('C:\\Antigravity_...', Array)
+#6 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\View.php(191): Illuminate\View\View->getContents()
+#7 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\View.php(160): Illuminate\View\View->renderContents()
+#8 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(78): Illuminate\View\View->render()
+#9 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(34): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#10 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(939): Illuminate\Http\Response->__construct(Object(Illuminate\View\View), 200, Array)
+#11 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(906): Illuminate\Routing\Router::toResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#12 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#13 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#14 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#15 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle(Object(Illuminate\Http\Request), Object(Closure))
+#16 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#19 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#20 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#22 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#23 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#26 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#27 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#28 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router->runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#31 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#32 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#33 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#34 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\livewire\livewire\src\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#37 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle(Object(Illuminate\Http\Request), Object(Closure))
+#38 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#43 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle(Object(Illuminate\Http\Request), Object(Closure))
+#44 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#45 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#47 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle(Object(Illuminate\Http\Request), Object(Closure))
+#48 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#49 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#50 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#51 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle(Object(Illuminate\Http\Request), Object(Closure))
+#52 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#53 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle(Object(Illuminate\Http\Request), Object(Closure))
+#54 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#55 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#56 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#57 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#58 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call('GET', '/listing/test-a...', Array, Array, Array, Array)
+#59 C:\Antigravity_New_Apps\toletkoi_laravel\tests\Feature\PublicPagesTest.php(91): Illuminate\Foundation\Testing\TestCase->get('/listing/test-a...')
+#60 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1667): Tests\Feature\PublicPagesTest->test_listing_detail_loads()
+#61 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(519): PHPUnit\Framework\TestCase->runTest()
+#62 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#63 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(365): PHPUnit\Framework\TestRunner->run(Object(Tests\Feature\PublicPagesTest))
+#64 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#65 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#66 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#67 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#68 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\TextUI\Application.php(211): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#69 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application->run(Array)
+#70 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" (View: C:\Antigravity_New_Apps\toletkoi_laravel\resources\views\listings\show.blade.php) in C:\Antigravity_New_Apps\toletkoi_laravel\storage\framework\views\97fb71843129d13ad98aee5b60b56338.php:352
+Stack trace:
+#0 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\livewire\livewire\src\Mechanisms\ExtendBlade\ExtendedCompilerEngine.php(58): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 1)
+#1 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(59): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->handleViewException(Object(ParseError), 1)
+#2 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\livewire\livewire\src\Mechanisms\ExtendBlade\ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Antigravity_...', Array)
+#3 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath('C:\\Antigravity_...', Array)
+#4 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\livewire\livewire\src\Mechanisms\ExtendBlade\ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get('C:\\Antigravity_...', Array)
+#5 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get('C:\\Antigravity_...', Array)
+#6 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\View.php(191): Illuminate\View\View->getContents()
+#7 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\View.php(160): Illuminate\View\View->renderContents()
+#8 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(78): Illuminate\View\View->render()
+#9 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(34): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#10 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(939): Illuminate\Http\Response->__construct(Object(Illuminate\View\View), 200, Array)
+#11 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(906): Illuminate\Routing\Router::toResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#12 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Routing\Router->prepareResponse(Object(Illuminate\Http\Request), Object(Illuminate\View\View))
+#13 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#14 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#15 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle(Object(Illuminate\Http\Request), Object(Closure))
+#16 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#17 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#19 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#20 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#22 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#23 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#26 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#27 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#28 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#29 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#30 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router->runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#31 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#32 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#33 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#34 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\livewire\livewire\src\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#37 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle(Object(Illuminate\Http\Request), Object(Closure))
+#38 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#43 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle(Object(Illuminate\Http\Request), Object(Closure))
+#44 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#45 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle(Object(Illuminate\Http\Request), Object(Closure))
+#46 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#47 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle(Object(Illuminate\Http\Request), Object(Closure))
+#48 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#49 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#50 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#51 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle(Object(Illuminate\Http\Request), Object(Closure))
+#52 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#53 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle(Object(Illuminate\Http\Request), Object(Closure))
+#54 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#55 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#56 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#57 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#58 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call('GET', '/listing/test-a...', Array, Array, Array, Array)
+#59 C:\Antigravity_New_Apps\toletkoi_laravel\tests\Feature\PublicPagesTest.php(91): Illuminate\Foundation\Testing\TestCase->get('/listing/test-a...')
+#60 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(1667): Tests\Feature\PublicPagesTest->test_listing_detail_loads()
+#61 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(519): PHPUnit\Framework\TestCase->runTest()
+#62 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#63 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestCase.php(365): PHPUnit\Framework\TestRunner->run(Object(Tests\Feature\PublicPagesTest))
+#64 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#65 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#66 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#67 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#68 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\src\TextUI\Application.php(211): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#69 C:\Antigravity_New_Apps\toletkoi_laravel\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application->run(Array)
+#70 {main}
+
+----------------------------------------------------------------------------------
+
+syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" (View: C:\Antigravity_New_Apps\toletkoi_laravel\resources\views\listings\show.blade.php)
+
+  at tests\Feature\PublicPagesTest.php:92
+     88Γûò             'status' => 'active',
+     89Γûò         ]);
+     90Γûò 
+     91Γûò         $response = $this->get("/listing/{$listing->slug}");
+  Γ₧£  92Γûò         $response->assertStatus(200);
+     93Γûò     }
+     94Γûò 
+     95Γûò     public function test_pending_listing_returns_404(): void
+     96Γûò     {
+
+
+  Tests:    1 failed (1 assertions)
+  Duration: 2.66s
+

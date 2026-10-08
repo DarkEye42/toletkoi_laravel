@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard/
+Disallow: /admin/
+Disallow: /ajax/
+Disallow: /api/
+
+Sitemap: http://toletkoi.local/sitemap.xml
